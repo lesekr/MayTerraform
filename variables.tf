@@ -31,3 +31,10 @@ variable "vpc_id" {
   type        = string
   default     = "vpc-0c48a1188ad4aefea"
 }
+
+#establish a key pair
+variable "key_pair" {
+  description = "key_pair"
+  type        = string
+  default     = "Dockerkeypair"
+}
