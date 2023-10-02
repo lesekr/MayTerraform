@@ -25,13 +25,6 @@ variable "bucketname" {
   default     = "private-jenkins-project20"
 }
 
-#establish the key pair
-variable "pair_key" {
-  description = "pair_key"
-  type        = string
-  default     = "project20key"
-}
-
 #establish the VPC id
 variable "vpc_id" {
   description = "jenkins_vpc_id"
