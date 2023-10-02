@@ -2,8 +2,6 @@
 resource "aws_instance" "augjenkins" {
   ami           = var.ami_id
   instance_type = var.instance_project
-  count         = 1
-  key_name      = var.pair_key
   user_data     = file("jenkins_load.sh")
 
   tags = {
