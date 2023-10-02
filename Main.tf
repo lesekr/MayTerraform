@@ -41,3 +41,14 @@ resource "aws_security_group" "project_aug20_sg" {
     Name = "allowing ssh"
   }
 }
+
+#create s3 bucket
+
+resource "aws_s3_bucket" "ekrissinbucketmay" {
+  bucket = var.bucketname
+
+  tags = {
+    Name        = "ekrissinbucketmay23"
+    Environment = "project_20"
+  }
+}
